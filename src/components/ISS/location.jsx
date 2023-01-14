@@ -1,10 +1,9 @@
-import { useEffect } from "react";
-import { useState } from "react";
+
 
 function LocationISS({location,userloc}){
     const {latitude,longitude}=location;
       
-     console.log(location)
+    //  console.log(location)
     // const distance =0;
     
     // get user location

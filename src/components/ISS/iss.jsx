@@ -14,10 +14,10 @@ function apicall(){
 function getUserLoc(){
    
     const userLocation=(loc)=>{
-        console.log(loc)
+        // console.log(loc)
         // const {latitude,longitude}=loc.coords;
         setuserlocation(loc.coords)
-        console.log(userlocation)
+        // console.log(userlocation)
         
         }
         function errorCallback(err){
@@ -29,7 +29,7 @@ function getUserLoc(){
   }
 
 function display(loc){
-  const {iss_position,...other}=loc;
+  const {iss_position}=loc;
 
 // JQuery
 //   $(".location").html(`ISS is at location of lat: ${latitude} and lon: ${longitude}`)

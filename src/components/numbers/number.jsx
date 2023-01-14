@@ -2,8 +2,8 @@
 
 function Number(){
     function shownum(data){
-        console.log(data);
-        const {text , number}=data;
+        // console.log(data);
+        const {text }=data;
         
 
         document.querySelector(".para").innerHTML=` ${text};`;
@@ -12,7 +12,7 @@ function Number(){
     const trivia=()=>{
 
         const num=document.querySelector(".input").value||(Math.floor(Math.random()*500));
-        console.log(num);
+        // console.log(num);
         fetch(`http://numbersapi.com/${num}/trivia?json`).then(res=>res.json()).then(data=>shownum(data));
 
         }
